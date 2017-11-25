@@ -1,0 +1,300 @@
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>YoYo答辩评分系统</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+
+</head>
+<body>
+<!-- PRE LOADER -->
+
+<div class="preloader">
+    <div class="sk-spinner sk-spinner-wordpress">
+        <span class="sk-inner-circle"></span>
+    </div>
+</div>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 ">
+            <ol class="breadcrumb text-right" id="info">
+                <!--<c:if test="${sessionScope['_LOGIN_USER_']==null}">-->
+                <li id="li1"><span>您好，欢迎使用YoYo答辩评分系统！</span>
+                    <a href="${pageContext.request.contextPath}/user/login.do" data-toggle="modal">[登录]</a>
+                    <!--</c:if>-->
+            </ol>
+            <!-- Navigation section  -->
+            <div class="navbar navbar-default navbar-static-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon icon-bar"></span>
+                            <span class="icon icon-bar"></span>
+                            <span class="icon icon-bar"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand"><i class="fa fa-magnet"></i></a>
+                    </div>
+                    <div class="collapse navbar-collapse"
+                         id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="${pageContext.request.contextPath}/index.action">首页
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">主题
+                                    <strong class="caret"></strong></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="${pageContext.request.contextPath}/goods/goodsCate.action?childid=1">
+                                            软件工程系
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+
+                                    <li>
+                                        <a href="${pageContext.request.contextPath}/goods/goodsCate.action?childid=2">
+                                            通信工程系
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+
+                                    <li>
+                                        <a href="${pageContext.request.contextPath}/goods/goodsCate.action?childid=3">
+                                            电子工程系
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                                    data-toggle="dropdown">答辩<strong class="caret"></strong></a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="${pageContext.request.contextPath}/goods/goodsCate.action?childid=1">
+                                            未答辩
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+
+                                    <li>
+                                        <a href="${pageContext.request.contextPath}/goods/goodsCate.action?childid=2">
+                                            答辩中
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+
+                                    <li>
+                                        <a href="${pageContext.request.contextPath}/goods/goodsCate.action?childid=3">
+                                            已答辩
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </li>
+                        </ul>
+
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control"/>
+                            </div>
+                            <button type="submit" class="btn btn-default">搜索</button>
+
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                                    data-toggle="dropdown">今日答辩通知
+                                <strong class="caret"></strong></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">按时间查询</a></li>
+
+                                    <li class="divider"></li>
+                                    <li><a href="#">按班级查询</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Home Section -->
+
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h2>答辩主题中心</h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <div class="copyrights">Collect from <a href="#">YoYo答辩评分系统</a></div>
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="single-project.html">
+                        <div class="portfolio-thumb">
+                            <img src="images/portfolio-img1.jpg" class="img-responsive" alt="Portfolio">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-item">
+                                    <h3>软件工程系</h3>
+                                    <small>答辩主题</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="single-project.html">
+                        <div class="portfolio-thumb">
+                            <img src="images/portfolio-img2.jpg" class="img-responsive" alt="Portfolio">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-item">
+                                    <h3>通信工程系</h3>
+                                    <small>答辩主题</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="single-project.html">
+                        <div class="portfolio-thumb">
+                            <img src="images/portfolio-img3.jpg" class="img-responsive" alt="Portfolio">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-item">
+                                    <h3>电子工程系</h3>
+                                    <small>答辩主题</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="single-project.html">
+                        <div class="portfolio-thumb">
+                            <img src="images/portfolio-img4.jpg" class="img-responsive" alt="Portfolio">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-item">
+                                    <h3>英语系</h3>
+                                    <small>答辩主题</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="single-project.html">
+                        <div class="portfolio-thumb">
+                            <img src="images/portfolio-img5.jpg" class="img-responsive" alt="Portfolio">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-item">
+                                    <h3>数字艺术系</h3>
+                                    <small>答辩主题</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="single-project.html">
+                        <div class="portfolio-thumb">
+                            <img src="images/portfolio-img6.jpg" class="img-responsive" alt="Portfolio">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-item">
+                                    <h3>商务管理系</h3>
+                                    <small>答辩主题</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-12 col-sm-12 text-center">
+                    <h3>选择的答辩主题有问题 <a href="contact.html">请联系老师！</a></h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-3">
+                    <i class="fa fa-magnet"></i>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <p> 大连东软信息学院 </br>
+                        地址：大连软件园路8号</p>
+                </div>
+
+                <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-3">
+                    <p><a href="neudoft.edu.cn">大连东软信息学院官网</a></p>
+                    <p>(+86) 2048937 / (+86) 203403</p>
+                </div>
+
+                <div class="clearfix col-md-12 col-sm-12">
+                    <hr>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="footer-copyright">
+                        <p>© 2017 YoYo Studio | All Rights Reserved.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <ul class="social-icon">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</div>
+</body>
+</html>

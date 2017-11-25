@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD
+ Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace实际上接口的名字 -->
+<mapper namespace="org.test.dao.UserDao">
+
+
+    <!--ps :使用心得  与数据库端解耦 idea不解耦就是不好用-->
+    <!--<resultMap type="org.test.dto.SubDTO" id="resultMapUserDTO">-->
+    <!--<id property="mUseId" column="user_id"/>-->
+    <!--<result property="username" column="user_name"/>-->
+    <!--<result property="password" column="user_pass"/>-->
+    <!--<result property="mUserEmail" column="user_email"/>-->
+    <!--<result property="mUserPhone" column="user_phone"/>-->
+    <!--</resultMap>-->
+
+
+    <!-- 根据用户名和密码查询 -->
+    <select id="findByUserNameAndPassword" resultType="UserDTO">
+        select * from t_user where user_name=#{username} and user_pass=#{password}
+    </select>
+</mapper>
